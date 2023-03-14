@@ -82,3 +82,35 @@
     </script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+JS CODE:-
+    <script>
+      const myform = document.querySelector('#my-form');
+      const iname = document.querySelector('#name');
+      const iemail = document.querySelector('#email');
+      const inumber = document.querySelector('#number');
+      const ulist = document.querySelector('.users');
+      
+      myform.addEventListener('submit', onsubmit);
+      
+      function onsubmit(e) {
+        e.preventDefault();
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${iname.value} : ${inumber.value} : ${iemail.value} `));
+        console.log(li)
+        ulist.appendChild(li);
+        iname.value = '';
+        iemail.value = '';
+        inumber = '';
+      };
+    </script>
