@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajinath Personal Site</title>
+</head>
+<body style="background-image: url('education.jpg'); background-repeat: no-repeat; background-size: cover;">
+   
+  
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <h1 style="font-size: 36px; margin: 0; text-align: center; color: #ff6f3c;">Book a Call</h1>
+        <h5 style="font-size: 16px; margin: 10px 0 0; text-align: center;">Book a slot and our representative will call you</h5>
+    </div>
+      
 
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="call-time">Time for call:</label>
+        <input type="date" name="Teme for call" id="Time for call">
+        <input type="time" name="Time for call" id="Time for call"> <br><br>
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+        const myForm = document.getElementById('myForm');
+      
+        myForm.addEventListener('submit', (event) => {
+          event.preventDefault()
+      
+          
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('phone').value;
+          const callTime = document.getElementById('call-time').value;
+      
+          
+          console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Phone:', phone);
+    console.log('Call Time:', callTime);
+  });
+</script>
+
+      
+      
+      
+      
+      
+      
+</body>
+</html>
